@@ -19,6 +19,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 // initialize server
+// @ts-ignore
 await mongoose.connect(MONGODB_CNX_STR);
 console.log(`connected to DB: "${MONGODB_CNX_STR}"`);
 

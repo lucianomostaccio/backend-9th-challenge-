@@ -9,6 +9,7 @@ const store = connectMongo.create({
 
 export const sessions = session({
   store,
+  // @ts-ignore
   secret: SESSION_SECRET,
   resave: false,
   saveUninitialized: false,

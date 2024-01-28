@@ -37,8 +37,6 @@ webUsersRouter.get("/profile", onlyLoggedInWeb, async (req, res) => {
 
       // @ts-ignore
       console.log('Image path:', updatedUser.fullImageUrl);
-
-
   
       // Update the session data with the latest user information
       req.session["user"] = updatedUser;
